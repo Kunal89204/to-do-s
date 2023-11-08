@@ -16,7 +16,7 @@ btn.addEventListener("click", () => {
 
     // adding tasks
     task_add.addEventListener("click", () => {
-        if (input.value !== "") {
+        if (input.value.trim() !== "") {
             let lists = document.querySelector(".lists");
 
             let div = document.createElement("div");
