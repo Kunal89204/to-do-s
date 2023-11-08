@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/394111977c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="to-do-box">
+      <div class="to-do-top"><span class="title">To-Do</span></div>
+      <div class="tasks-box">
+        <ul class="lists">
+          <!-- Tasks added under this -->
+        </ul>
+      </div>
+      <div class="add-button">
+        <button class="button"><i class="fa-solid fa-plus"></i></button>
+      </div>
+    </div>
+
+    <div class="add-task-box">
+      <i class="fa-solid fa-xmark"></i>
+      <div class="input-box">
+        <label for="add">Add Task</label> <input type="text" id="task" />
+      </div>
+      <div class="submit-button"><button id="task-add">Add</button></div>
+    </div>
+  </body>
+</html>

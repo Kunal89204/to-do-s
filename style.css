@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.35s;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.to-do-box{
+    width: 350px;
+    border: 0px solid;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 0px rgb(196, 196, 194);
+    background-color: white;
+}
+
+.to-do-top{
+    height: 70px;
+    width: 520px;
+    border-radius: 50%;
+    border: 0px solid;
+    translate: -94px -10px;
+    background-color: rgb(147, 179, 248);
+    box-shadow: 0px 0px 25px 1px rgb(147, 179, 248);
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    bottom: 15px;
+    left: 42%;
+    font-size: xx-large;
+    color: white;
+}
+
+ul{
+    max-height: 390px;
+    overflow: auto;
+    scrollbar-gutter: stable ;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+ul::-webkit-scrollbar{
+    width: 10px;
+}
+
+ul::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: rgb(201, 199, 199);
+}
+
+ul::-webkit-scrollbar-thumb{
+    background: rgb(147, 179, 248);
+    border-radius: 10px;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+li{
+    white-space: nowrap; 
+  width: 250px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+
+
+
+/* button css */
+.add-button{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+.button{
+    padding: 15px;
+    border-radius: 50%;
+    border: 0px solid;
+    background-color: rgb(147, 179, 248);
+    box-shadow: 0px 0px 10px 1px rgb(147, 179, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.i{
+    scale: 1.5;
+    color: rgb(145, 143, 143);
+    cursor: pointer;
+}
+
+
+
+.add-task-box{
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    padding: 20px;
+    font-size: larger;
+    width: 300px;
+    border: 0px solid;
+    box-shadow: 0px 0px 10px 2px rgb(223, 219, 219);
+    scale: 0;
+}
+
+label{
+    display: block;
+    padding: 10px 0px;
+}
+
+input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 10px 2px rgb(223, 219, 219);
+}
+
+
+.submit-button{
+    text-align: center;
+    padding: 20px 0px 0px 0px ;
+}
+
+#task-add{
+    border: 0px solid;
+    padding: 5px 8px;
+    font-size: large;
+    border-radius: 5px;
+    background-color: rgb(255, 217, 0);
+    cursor: pointer;
+}
+
+.fa-xmark{
+    float: right;
+    color: gray;
+    cursor: pointer;
+}
+
